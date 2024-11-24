@@ -15,13 +15,13 @@ const Page = () => {
       }}
     >
       <Typography variant="h3" sx={{ marginBottom: 2 }}>
-        Dashboard(under construction)
+        Vendors(under construction)
       </Typography>
       <Typography variant="h6" sx={{ marginBottom: 1 }}>
-        Welcome to the dashboard
+        Welcome to the Vendors List
       </Typography>
       <Typography variant="body1">
-        Here you can view and manage all your invoices.
+        Here you can view and manage all the Vendors.
       </Typography>
     </Box>
   );

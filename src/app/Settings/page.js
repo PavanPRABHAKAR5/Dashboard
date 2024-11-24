@@ -15,13 +15,13 @@ const Page = () => {
       }}
     >
       <Typography variant="h3" sx={{ marginBottom: 2 }}>
-        Dashboard(under construction)
+       Settings(under construction)
       </Typography>
       <Typography variant="h6" sx={{ marginBottom: 1 }}>
-        Welcome to the dashboard
+        Welcome to the Settings Pages, Still under construction
       </Typography>
       <Typography variant="body1">
-        Here you can view and manage all your invoices.
+        Here you can view and manage all the client setting.
       </Typography>
     </Box>
   );
