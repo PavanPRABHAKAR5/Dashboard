@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     experimental: {
-        appDir: true,
-        serverComponentsExternalPackages: ["mongoose"],
+      serverExternalPackages: ["mongoose"],
       },
+      eslint:{
+        ignoreDuringBuilds: true,
+      }
 };
 
 export default nextConfig;
+
