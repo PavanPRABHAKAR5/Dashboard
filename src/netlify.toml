@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[functions]
+  # Directory where Netlify expects serverless functions
+  directory = "netlify/functions"
+
+[[redirects]]
+  # Redirect all requests to Next.js
+  from = "/*"
+  to = "/.netlify/functions/next"
+  status = 200
