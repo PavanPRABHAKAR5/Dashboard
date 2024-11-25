@@ -69,7 +69,7 @@ const NavBar = () => {
               sx={{
                 bgcolor: "#0277bd", 
               }}
-              src="/static/images/avatar/1.jpg" 
+              src="./user.png" 
               alt="User Profile"
             />
           </IconButton>

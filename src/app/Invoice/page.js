@@ -46,7 +46,7 @@ const Invoice = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/invoice');
+        const response = await fetch('/api/fetch');
         const data = await response.json();
         setRows(data); 
       } catch (error) {
