@@ -83,7 +83,7 @@ const Invoice = () => {
     return format(new Date(date), 'dd-MM-yyyy');
   };
 
-  const filteredRows = rows.reverse().filter((row) => {
+  const filteredRows = rows.filter((row) => {
     const statusMatches = statusFilter ? row.status === statusFilter : true;
     const searchMatches =
       row.vendorName.toLowerCase().includes(searchQuery.toLowerCase()) ||
