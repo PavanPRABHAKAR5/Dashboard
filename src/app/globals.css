@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* spinner.css */
+.spinner {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  color: #5c6063;
+  background: linear-gradient(currentColor 0 0) center/100% 3.4px,
+              linear-gradient(currentColor 0 0) center/3.4px 100%;
+  background-repeat: no-repeat;
+  animation: spinner-slq5ph 2s infinite;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  background: repeating-conic-gradient(#0000 0 35deg, currentColor 0 90deg);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 3.4px), #000 0);
+  border-radius: 50%;
+}
+
+.spinner::after {
+  margin: 20%;
+}
+
+@keyframes spinner-slq5ph {
+  100% {
+    transform: rotate(1turn);
+  }
+}
